@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 2.5;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://wallpaperaccess.com/full/1266890.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  text-transform: uppercase;
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0);
+  color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+}
+
+nav .menu {
+  width: 40%;
+  padding-right: 15px;
+  color: #696969;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: #F5F5F5;
+  font-family: 'Itim', cursive;
+  font-weight: bold;
+}
+
+nav .menu a:hover {
+  color: #FF69B4
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h3 {
+  font-size: 40px;
+  font-weight: 200;
+  word-spacing: 3px;
+}
+
+section h1 {
+  margin: 30px 0 20 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 15px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+}
+
+section .btn1 {
+  background: #FF1493;
+  color: white;
+  margin-right: 40px;
+}
+.btn1:hover{
+  background: #708090;
+  color: white;
+}
+
+section .btn2 {
+  background: #708090;
+  color: white;
+}
+.btn2:hover{
+  background: #FF1493;
+  color: white;
+  margin-right: 40px;
+}
+
+.change:after {
+  content: '';
+  animation: changetext 10s infinite linear;
+  color:#FF1493;
+}
+
+@keyframes changetext {
+  0% {
+    content: "AMER FORT";
+  }
+
+  15% {
+    content: "HAWA MAHAL";
+  }
+
+  30% {
+    content: "NAHARGARH";
+  }
+
+  45% {
+    content: "JAIGARH";
+  }
+
+  60% {
+    content: "CITY PALACE";
+  }
+
+  75% {
+    content: "WTP";
+  }
+
+  90% {
+    content: "JANTAR MANTAR";
+  }
+  100%{
+    content : "JAL MAHAL";
+  }
+}
